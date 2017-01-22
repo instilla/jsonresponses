@@ -53,7 +53,7 @@
 			"request" : "api.jsonresponses.org/v1/objects",
 			"response" : {
 				"status" : "success",
-				"code" : 404,
+				"code" : 204,
 				"data" : {
 					"objects" : []
 				}
