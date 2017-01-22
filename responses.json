@@ -63,7 +63,7 @@
 			"uuid" : "53b627e5-a1bf-48d6-8018-20ea0f8b3a22",
 			"description" : "successful response to post request when requester is allowed to receive an identifier for the posted object",
 			"requestMethod": "post",
-			"request" : "api.jsonresponses.org/v1/objects/{uuid}",
+			"request" : "api.jsonresponses.org/v1/objects/",
 			"response" : {
 				"status" : "success",
 				"code" : 201,
@@ -76,10 +76,10 @@
 			"uuid" : "2cd99f99-e7a0-4764-b36c-9f942c0544d3",
 			"description" : "successful response to post request when requester is not allowed to receive any identifier for the posted object",
 			"requestMethod": "post",
-			"request" : "api.jsonresponses.org/v1/objects/{uuid}",
+			"request" : "api.jsonresponses.org/v1/objects/",
 			"response" : {
 				"status" : "success",
-				"code" : 201,
+				"code" : 204,
 				"data" : null
 			}
 		},
@@ -102,6 +102,56 @@
 			"response" : {
 				"status" : "success",
 				"code" : 202,
+				"data" : null
+			}
+		},
+		{
+			"uuid" : "643a2bd1-35a1-4487-a3cf-c11e163a5aa8",
+			"description" : "unsuccessful response to get request on single object, object not found",
+			"requestMethod": "get",
+			"request" : "api.jsonresponses.org/v1/objects/{uuid}",
+			"response" : {
+				"status" : "fail",
+				"code" : 404,
+				"data" : null
+			}
+		},
+		{
+			"uuid" : "4d0e0fae-d63a-488e-9312-ac6e4b32d770",
+			"description" : "unsuccessful response to post request when there was a problem with the data submitted",
+			"requestMethod": "post",
+			"request" : "api.jsonresponses.org/v1/objects/",
+			"response" : {
+				"status" : "fail",
+				"code" : 400,
+				"data" : {
+					"param1" : "required",
+					"param2" : "format"
+				}
+			}
+		},
+		{
+			"uuid" : "7488504a-1fb9-4781-8b7e-437e59e4d798",
+			"description" : "unsuccessful response to post request when there was a problem with the data submitted (object already exist or there is a conflict with the submitted data",
+			"requestMethod": "post",
+			"request" : "api.jsonresponses.org/v1/objects/",
+			"response" : {
+				"status" : "fail",
+				"code" : 409,
+				"data" : {
+					"param1" : "duplicate",
+					"param2" : "not allowed"
+				}
+			}
+		},
+		{
+			"uuid" : "4d0e0fae-d63a-488e-9312-ac6e4b32d770",
+			"description" : "unsuccessful response to post request when an error occurred in processing the request",
+			"requestMethod": "post",
+			"request" : "api.jsonresponses.org/v1/objects/",
+			"response" : {
+				"status" : "error",
+				"code" : 500,
 				"data" : null
 			}
 		}
