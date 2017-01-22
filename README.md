@@ -1,6 +1,6 @@
 # jsonresponses
 ## International JSON Responses Standards
-This is the International JSON Responses Standards readme, which aims to provide a definitive answer to those who are looking for a simple and complete guide to the implementation of JSON responses (i.e. to a RESTful API).
+The International JSON Responses Standards readme aims to provide a definitive answer to those who are looking for a simple and complete guide to the implementation of JSON responses (i.e. to a RESTful API).
 
 
 
