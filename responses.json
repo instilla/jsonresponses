@@ -53,7 +53,7 @@
 			"request" : "api.jsonresponses.org/v1/objects",
 			"response" : {
 				"status" : "success",
-				"code" : 200,
+				"code" : 404,
 				"data" : {
 					"objects" : []
 				}
@@ -66,7 +66,7 @@
 			"request" : "api.jsonresponses.org/v1/objects/{uuid}",
 			"response" : {
 				"status" : "success",
-				"code" : 200,
+				"code" : 201,
 				"data" : {
 					"uuid": "some uuid"
 				}
@@ -79,7 +79,7 @@
 			"request" : "api.jsonresponses.org/v1/objects/{uuid}",
 			"response" : {
 				"status" : "success",
-				"code" : 200,
+				"code" : 201,
 				"data" : null
 			}
 		},
@@ -90,7 +90,7 @@
 			"request" : "api.jsonresponses.org/v1/objects/{uuid}",
 			"response" : {
 				"status" : "success",
-				"code" : 200,
+				"code" : 202,
 				"data" : null
 			}
 		},
@@ -101,7 +101,7 @@
 			"request" : "api.jsonresponses.org/v1/objects/{uuid}",
 			"response" : {
 				"status" : "success",
-				"code" : 200,
+				"code" : 202,
 				"data" : null
 			}
 		}
