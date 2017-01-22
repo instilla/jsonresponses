@@ -47,30 +47,6 @@
 			}
 		},
 		{
-			"uuid" : "9d218cc6-9a5c-4b4a-b33c-6def25204a66",
-			"description" : "successful response to get request on objects list",
-			"requestMethod": "get",
-			"request" : "api.jsonresponses.org/v1/objects",
-			"response" : {
-				"status" : "success",
-				"code" : 200,
-				"data" : {
-					"objects" : [
-						{
-							"uuid" : "some uuid",
-							"property1" : "some property",
-							"property2" : "some property"
-						},
-						{
-							"uuid" : "some uuid",
-							"property1" : "some property",
-							"property2" : "some property"
-						}
-					]
-				}
-			}
-		},
-		{
 			"uuid" : "2c973d14-20f2-4d65-8dac-73f65361b908",
 			"description" : "successful response to get request on objects list, with empty list returned",
 			"requestMethod": "get",
